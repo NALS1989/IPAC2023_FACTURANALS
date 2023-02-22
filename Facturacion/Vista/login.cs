@@ -60,6 +60,7 @@ namespace Vista
             else
             {
                 ContraseñatextBox.PasswordChar = '*';// si no la tiene que la coloque
+
             }
         }
     }
