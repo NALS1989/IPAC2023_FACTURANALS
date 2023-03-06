@@ -48,6 +48,20 @@ namespace Vista
                 return;
             }
             errorProvider1.Clear();// UNA VEZ LLENANDO LOS DATOS LIMPIA Y CONTINUA
+
+            // validar usuario en la base de datos
+
+
+            // Mandar al menu 
+
+            Menu menuFormulario=new Menu();
+            this.Hide();
+            menuFormulario.Show();
+
+
+
+
+
         }
 
         private void Mostrarbutton_Click(object sender, EventArgs e)
