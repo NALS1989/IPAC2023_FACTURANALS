@@ -16,5 +16,16 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void UsuariosToolStripButton1_Click(object sender, EventArgs e)
+        {
+            UsuariosForm userForm = new UsuariosForm();
+            userForm.MdiParent = this;
+            userForm.Show();
+
+
+
+
+        }
     }
 }

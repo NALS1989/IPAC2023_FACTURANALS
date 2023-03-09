@@ -62,6 +62,9 @@ namespace Vista
 
 
 
+
+
+
         }
 
         private void Mostrarbutton_Click(object sender, EventArgs e)
