@@ -160,6 +160,7 @@
             this.BuscarButton.Size = new System.Drawing.Size(50, 38);
             this.BuscarButton.TabIndex = 12;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // FotoPictureBox
             // 
@@ -275,7 +276,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsuariosForm";
             this.Text = "Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).EndInit();

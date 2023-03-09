@@ -144,16 +144,33 @@ namespace Vista
             {
                 System.IO.MemoryStream ms= new System.IO.MemoryStream();
                 FotoPictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                user.Foto = ms.GetBuffer();
+
+
             }
 
             // Insertar en la base de datos 
 
 
 
-        }
-             
-
          
+
+
+
+        }
+
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog=new OpenFileDialog(); 
+
+            DialogResult dialogResult=dialog.ShowDialog();  
+
+            if (dialogResult == DialogResult.OK)
+            {
+                FotoPictureBox.Image = Image.FromFile(dialog.FileName);
+            }
+
+        }
     }
     
 
