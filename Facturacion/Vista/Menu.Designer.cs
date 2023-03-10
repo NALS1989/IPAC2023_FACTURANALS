@@ -175,6 +175,7 @@
             this.ProductosToolStripButton2.Size = new System.Drawing.Size(75, 53);
             this.ProductosToolStripButton2.Text = "Productos";
             this.ProductosToolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ProductosToolStripButton2.Click += new System.EventHandler(this.ProductosToolStripButton2_Click);
             // 
             // toolStripTabItem3
             // 
@@ -218,6 +219,7 @@
             this.ClientesToolStripButton1.Size = new System.Drawing.Size(61, 53);
             this.ClientesToolStripButton1.Text = "Clientes";
             this.ClientesToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClientesToolStripButton1.Click += new System.EventHandler(this.ClientesToolStripButton1_Click);
             // 
             // toolStripTabItem4
             // 
@@ -271,6 +273,7 @@
             this.IsMdiContainer = true;
             this.Name = "Menu";
             this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).EndInit();
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();

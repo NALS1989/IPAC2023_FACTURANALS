@@ -27,5 +27,20 @@ namespace Vista
 
 
         }
+
+        private void ProductosToolStripButton2_Click(object sender, EventArgs e)
+        {
+            ProductosForm productosForm = new ProductosForm();
+            productosForm.MdiParent = this;
+            productosForm.Show();   
+
+        }
+
+        private void ClientesToolStripButton1_Click(object sender, EventArgs e)
+        {
+            ClientesForm clientForm = new ClientesForm();
+            clientForm.MdiParent = this;
+            clientForm.Show();
+        }
     }
 }
