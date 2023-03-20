@@ -147,6 +147,34 @@ namespace Datos
         }
 
 
+        public bool Eliminar(string codigoUsuario)
+        {
+            bool elimino = false;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" DELETE FROM usuario ");
+                sql.Append(" WHERE CodigoUsuario = @CodigoUsuario; ");
+
+                using (MySqlConnection _conexion = new MySqlConnection(cadena))
+                {
+                    _conexion.Open();
+                    using (MySqlCommand comando = new MySqlCommand(sql.ToString(), _conexion))
+                    {
+                        comando.CommandType = CommandType.Text;
+                        comando.Parameters.Add("@CodigoUsuario", MySqlDbType.VarChar, 50).Value = codigoUsuario;
+                        comando.ExecuteNonQuery();
+                        elimino = true;
+                    }
+                }
+            }
+            catch (System.Exception ex)
+            {
+            }
+            return elimino;
+        }
+
+
 
 
 
