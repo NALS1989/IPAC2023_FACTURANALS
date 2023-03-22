@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,8 +51,10 @@
             this.NuevoButton = new System.Windows.Forms.Button();
             this.AgregarPictureBox = new System.Windows.Forms.PictureBox();
             this.BuscarImagenButton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgregarPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -214,6 +217,7 @@
             this.GuardarButton.TabIndex = 20;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // ModificarButton
             // 
@@ -233,6 +237,7 @@
             this.NuevoButton.TabIndex = 18;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // AgregarPictureBox
             // 
@@ -252,6 +257,10 @@
             this.BuscarImagenButton.Size = new System.Drawing.Size(49, 41);
             this.BuscarImagenButton.TabIndex = 24;
             this.BuscarImagenButton.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // ClientesForm
             // 
@@ -281,11 +290,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientesForm";
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgregarPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +325,6 @@
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.PictureBox AgregarPictureBox;
         private System.Windows.Forms.Button BuscarImagenButton;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

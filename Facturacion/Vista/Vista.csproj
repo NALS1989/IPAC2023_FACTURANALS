@@ -59,17 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
     <Compile Include="ClientesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientesForm.Designer.cs">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -94,8 +95,8 @@
     <EmbeddedResource Include="ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.cs</DependentUpon>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -152,6 +153,10 @@
     <None Include="Resources\buscar %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{AD67C2B1-703F-4FB4-80D3-12638635530A}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{b246fbb5-d521-43ad-a726-0321b490647f}</Project>
       <Name>Entidades</Name>
